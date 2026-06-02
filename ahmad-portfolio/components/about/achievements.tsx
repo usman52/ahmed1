@@ -79,7 +79,7 @@ export default function Achievements() {
           {achievements.map((achievement, index) => (
             <ScrollReveal key={achievement.label} delay={index * 0.1}>
               <motion.div
-                whileHover={{ y: -8, transition: { duration: 0.3 } }
+                whileHover={{ y: -8, transition: { duration: 0.3 } } }
                 className="bg-white rounded-2xl p-6 lg:p-8 border border-[#e2e8f0] shadow-sm hover:shadow-xl transition-all duration-300 text-center"
               >
                 <div className={`w-14 h-14 rounded-xl ${achievement.color} flex items-center justify-center mx-auto mb-4`}>
