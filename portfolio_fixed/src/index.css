@@ -205,3 +205,34 @@
     animation: marquee 30s linear infinite;
   }
 }
+
+/* ── Netlify deploy fixes ─────────────────────────────────────────
+   GSAP sets opacity:0 before ScrollTrigger fires.
+   If ScrollTrigger misfires (fonts not loaded, wrong scroll pos),
+   elements stay invisible. This ensures they're always visible
+   after a short delay as a safety net.
+──────────────────────────────────────────────────────────────── */
+.service-card,
+.industry-card,
+.cs-card,
+.cert-card,
+.result-item,
+.impact-stat,
+.award-item,
+.tech-col,
+.expertise-tag,
+.academic-card {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hero bg image — ensure it covers fully */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

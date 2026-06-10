@@ -156,7 +156,7 @@ export default function Certifications() {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {certifications.map((cert, i) => (
-              <div key={i} className="cert-card bg-white rounded-2xl border border-[#2B3A4E]/10 p-8 hover:shadow-lg transition-all duration-300 group">
+              <div key={i} className="cert-card bg-white rounded-2xl border-2 border-[#2B3A4E]/10 p-8 shadow-sm hover:shadow-lg transition-all duration-300 group">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-14 h-14 rounded-xl bg-[#00B8A9]/10 flex items-center justify-center group-hover:bg-[#00B8A9] transition-colors">
                     <cert.icon className="w-7 h-7 text-[#00B8A9] group-hover:text-[#FEFBF6] transition-colors" />

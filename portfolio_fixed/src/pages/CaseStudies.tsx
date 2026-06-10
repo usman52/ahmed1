@@ -215,7 +215,7 @@ export default function CaseStudies() {
       <section className="cs-grid section-padding py-20 lg:py-32 bg-[#FEFBF6]">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8">
           {caseStudies.map((cs, i) => (
-            <div key={i} className="cs-card group bg-white rounded-2xl overflow-hidden border border-[#2B3A4E]/10 hover:shadow-xl transition-all duration-500">
+            <div key={i} className="cs-card group bg-white rounded-2xl overflow-hidden border-2 border-[#2B3A4E]/10 shadow-md hover:shadow-xl transition-all duration-500">
               {/* Image */}
               <div className="relative h-56 overflow-hidden">
                 <img
