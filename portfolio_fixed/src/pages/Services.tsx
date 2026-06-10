@@ -82,7 +82,7 @@ export default function Services() {
 
   useEffect(() => {
     // Refresh after layout settles
-    const rafId = requestAnimationFrame(() => { setTimeout(() => ScrollTrigger.refresh(), 200); });
+    requestAnimationFrame(() => { setTimeout(() => ScrollTrigger.refresh(), 200); });
     const ctx = gsap.context(() => {
       gsap.from('.services-hero > *', {
         y: 60, opacity: 0, duration: 0.8, stagger: 0.15, ease: 'power3.out', delay: 0.2,
