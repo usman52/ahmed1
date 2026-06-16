@@ -8,6 +8,58 @@ gsap.registerPlugin(ScrollTrigger);
 const caseStudies = [
   {
     number: '01',
+    title: 'Operational Cost Reduction & Financial Visibility',
+    industry: 'Manufacturing Operations',
+    image: '/images/data-analytics-viz.jpg',
+    challenge: [
+      'No real-time operational costing',
+      'No financial visibility',
+      'No cost control systems',
+      'No performance-based cost intelligence',
+    ],
+    solution: [
+      'Real-time operational costing system',
+      'Cost visibility dashboards',
+      'Machine-wise cost tracking',
+      'Production cost intelligence framework',
+      'Up to 70% reduction in changeover time',
+    ],
+    results: [
+      'PKR 100M+ Operational Impact',
+      'Improved financial visibility',
+      'Better operational decision-making',
+      'Enhanced cost optimization capability',
+    ],
+    tech: ['Power BI', 'Excel Automation', 'Industrial Costing', 'Manufacturing Analytics'],
+  },
+  {
+    number: '02',
+    title: 'Lean Transformation & Workplace Optimization',
+    industry: 'Production & Manufacturing',
+    image: '/images/paper-manufacturing.jpg',
+    challenge: [
+      'Process inconsistency',
+      'Poor workplace organization',
+      'Workflow inefficiencies',
+      'High operational waste',
+    ],
+    solution: [
+      '5S workplace systems',
+      'Lean process optimization',
+      'Standard operating procedures',
+      'Continuous improvement systems',
+      'Team-based Kaizen culture',
+    ],
+    results: [
+      'Improved workplace organization',
+      'Better process standardization',
+      'Increased operational discipline',
+      'Enhanced productivity and efficiency',
+    ],
+    tech: ['5S', 'Lean Manufacturing', 'SOP Development', 'Kaizen', 'Continuous Improvement'],
+  },
+  {
+    number: '03',
     title: 'AI-Powered Production Optimization System',
     industry: 'Packaging & Corrugated Manufacturing',
     image: '/images/packaging-manufacturing.jpg',
@@ -34,7 +86,7 @@ const caseStudies = [
     tech: ['Python', 'Power BI', 'Production Analytics', 'Lean Manufacturing', 'AI Scheduling'],
   },
   {
-    number: '02',
+    number: '04',
     title: 'Lean Manufacturing & Lead Time Reduction',
     industry: 'Manufacturing Operations',
     image: '/images/textile-manufacturing.jpg',
@@ -61,7 +113,7 @@ const caseStudies = [
     tech: ['Lean Manufacturing', 'Heijunka', 'Kaizen', 'VSM', 'Continuous Improvement'],
   },
   {
-    number: '03',
+    number: '05',
     title: 'Smart KPI Dashboard & Production Intelligence System',
     industry: 'Industrial Manufacturing',
     image: '/images/smart-factory.jpg',
@@ -87,7 +139,7 @@ const caseStudies = [
     tech: ['Power BI', 'SQL', 'Python', 'KPI Systems', 'Data Analytics'],
   },
   {
-    number: '04',
+    number: '06',
     title: 'Predictive Maintenance & Downtime Reduction',
     industry: 'Manufacturing & Production Systems',
     image: '/images/hero-manufacturing.jpg',
@@ -110,57 +162,6 @@ const caseStudies = [
       'Reduced downtime losses',
     ],
     tech: ['Machine Learning', 'Predictive Analytics', 'Python', 'Power BI', 'Reliability Engineering'],
-  },
-  {
-    number: '05',
-    title: 'Operational Cost Reduction & Financial Visibility',
-    industry: 'Manufacturing Operations',
-    image: '/images/data-analytics-viz.jpg',
-    challenge: [
-      'No real-time operational costing',
-      'No financial visibility',
-      'No cost control systems',
-      'No performance-based cost intelligence',
-    ],
-    solution: [
-      'Real-time operational costing system',
-      'Cost visibility dashboards',
-      'Machine-wise cost tracking',
-      'Production cost intelligence framework',
-    ],
-    results: [
-      'PKR 100M+ Operational Impact',
-      'Improved financial visibility',
-      'Better operational decision-making',
-      'Enhanced cost optimization capability',
-    ],
-    tech: ['Power BI', 'Excel Automation', 'Industrial Costing', 'Manufacturing Analytics'],
-  },
-  {
-    number: '06',
-    title: 'Lean Transformation & Workplace Optimization',
-    industry: 'Production & Manufacturing',
-    image: '/images/paper-manufacturing.jpg',
-    challenge: [
-      'Process inconsistency',
-      'Poor workplace organization',
-      'Workflow inefficiencies',
-      'High operational waste',
-    ],
-    solution: [
-      '5S workplace systems',
-      'Lean process optimization',
-      'Standard operating procedures',
-      'Continuous improvement systems',
-      'Team-based Kaizen culture',
-    ],
-    results: [
-      'Improved workplace organization',
-      'Better process standardization',
-      'Increased operational discipline',
-      'Enhanced productivity and efficiency',
-    ],
-    tech: ['5S', 'Lean Manufacturing', 'SOP Development', 'Kaizen', 'Continuous Improvement'],
   },
 ];
 
@@ -201,7 +202,7 @@ export default function CaseStudies() {
       <section className="min-h-[50vh] flex items-center justify-center bg-[#2B3A4E] pt-20">
         <div className="cs-hero section-padding max-w-4xl mx-auto text-center py-16 lg:py-24">
           <p className="micro-label text-[#00B8A9] mb-4">PORTFOLIO</p>
-          <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#FEFBF6] leading-[0.95] mb-6">
+          <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#FEFBF6] leading-[1.05] pb-1 mb-6">
             Manufacturing Transformation Case Studies
           </h1>
           <p className="text-xl text-[#00B8A9] font-medium mb-4">Real Industrial Problems. Measurable Business Results.</p>

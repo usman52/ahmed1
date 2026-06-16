@@ -92,7 +92,7 @@ export default function Contact() {
           <div className="grid lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-3">
               <p className="micro-label text-[#E86A33] mb-4">CONTACT</p>
-              <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#2B3A4E] leading-[0.95] mb-6">
+              <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#2B3A4E] leading-[1.05] pb-1 mb-6">
                 Contact Ahmad Bin Sadiq
               </h1>
               <p className="text-xl text-[#E86A33] font-medium mb-4">

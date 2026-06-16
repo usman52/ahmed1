@@ -80,19 +80,12 @@ export default function Home() {
         ref={heroRef}
         className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-20 overflow-hidden"
       >
-        {/* BG image — data analytics dashboard */}
-        <img
-          src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1600&q=85&fit=crop&auto=format"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-        />
-        {/* Overlay — navy gradient, strong enough to read text */}
+        {/* Overlay — navy gradient base */}
         <div
           aria-hidden="true"
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(160deg, rgba(43,58,78,0.93) 0%, rgba(43,58,78,0.80) 55%, rgba(0,184,169,0.45) 100%)',
+            background: 'linear-gradient(160deg, #2B3A4E 0%, #2B3A4E 55%, rgba(0,184,169,0.25) 100%)',
           }}
         />
         {/* Subtle grid decoration */}
@@ -104,31 +97,49 @@ export default function Home() {
         />
 
         {/* Content */}
-        <div className="hero-content relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <p className="micro-label text-[#00B8A9] mb-6 tracking-widest">
-            AI-POWERED MANUFACTURING CONSULTANT
-          </p>
-          <h1 className="font-display font-semibold text-[clamp(40px,8vw,96px)] text-white leading-[0.95] tracking-tight mb-6 drop-shadow-lg">
-            Ahmad Bin Sadiq
-          </h1>
-          <p className="text-lg lg:text-xl text-white/85 max-w-2xl mx-auto mb-4 leading-relaxed">
-            Lean Six Sigma Master Black Belt&nbsp;|&nbsp;Industrial Engineer&nbsp;|&nbsp;Smart Factory &amp; Operational Excellence Specialist
-          </p>
-          <p className="text-base text-white/65 max-w-xl mx-auto mb-10">
-            Helping manufacturing industries reduce cost, improve OEE, optimize production systems,
-            and digitally transform operations through AI, Lean Manufacturing, and Industry 5.0 solutions.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-4">
-            <Link to="/contact" className="pill-btn pill-btn-primary">Book Consultation</Link>
-            <Link to="/case-studies" className="pill-btn pill-btn-light-outline">View Projects</Link>
+        <div className="hero-content relative z-10 px-6 max-w-7xl mx-auto w-full py-16">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left — the hook */}
+            <div className="text-center lg:text-left">
+              <p className="micro-label text-[#00B8A9] mb-6 tracking-widest">
+                AI-POWERED MANUFACTURING CONSULTANT
+              </p>
+              <h1 className="font-display font-semibold text-[clamp(34px,5.5vw,64px)] text-white leading-[1.1] pb-1 tracking-tight mb-6">
+                I Turn Manufacturing Waste Into <span className="text-[#00B8A9]">Measurable Savings</span>
+              </h1>
+              <p className="text-lg lg:text-xl text-white/85 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                PKR 100M+ in operational impact delivered through AI, Lean Six Sigma, and Smart Manufacturing — for industries that want results, not theory.
+              </p>
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4 mb-10">
+                <Link to="/contact" className="pill-btn pill-btn-primary">Book Consultation</Link>
+                <Link to="/case-studies" className="pill-btn pill-btn-light-outline">View Projects</Link>
+              </div>
+              <p className="text-sm text-white/60">
+                <span className="text-white font-medium">Ahmad Bin Sadiq</span> — Lean Six Sigma Master Black Belt &nbsp;|&nbsp; Gold Medalist Industrial Engineer
+              </p>
+            </div>
+
+            {/* Right — visual proof */}
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img
+                  src="/images/financial-growth-hero.jpg"
+                  alt="Measurable operational growth and cost savings"
+                  className="w-full h-full object-cover aspect-[4/3]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#2B3A4E]/50 to-transparent" />
+              </div>
+              <div className="absolute -bottom-6 -left-4 lg:-left-8 bg-[#00B8A9] text-[#FEFBF6] px-6 py-4 rounded-xl shadow-xl">
+                <p className="font-display font-semibold text-2xl">PKR 100M+</p>
+                <p className="micro-label opacity-80">Operational Impact</p>
+              </div>
+              <div className="absolute -top-6 -right-4 lg:-right-8 bg-[#E86A33] text-[#FEFBF6] px-6 py-4 rounded-xl shadow-xl">
+                <p className="font-display font-semibold text-2xl">18%</p>
+                <p className="micro-label opacity-80">OEE Improvement</p>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* Corner micro-labels */}
-        <div className="absolute top-24 left-6 lg:left-12 micro-label text-white/40 hidden lg:block">AI-POWERED MANUFACTURING</div>
-        <div className="absolute top-24 right-6 lg:right-12 micro-label text-white/40 hidden lg:block">SCROLL TO EXPLORE</div>
-        <div className="absolute bottom-8 left-6 lg:left-12 micro-label text-white/40 hidden lg:block">LEAN SIX SIGMA MBB</div>
-        <div className="absolute bottom-8 right-6 lg:right-12 micro-label text-white/40 hidden lg:block">INDUSTRY 5.0</div>
 
         {/* Scroll pulse */}
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10">
@@ -174,7 +185,7 @@ export default function Home() {
           <p className="future-body text-lg lg:text-xl text-[#FEFBF6]/80 leading-relaxed mb-8 max-w-3xl mx-auto">
             I help industries transform traditional manufacturing operations into intelligent, efficient,
             and data-driven systems through Artificial Intelligence, Lean Six Sigma, Industrial Engineering,
-            and Operational Excellence. Currently serving as Deputy Manager at Servis Tyres with experience
+            and Operational Excellence. Currently serving as Head of Operational Excellence at Servis Tyres with experience
             across packaging, textile, tyre manufacturing, sustainability, and smart factory transformation.
           </p>
           <p className="micro-label text-[#00B8A9]">AI • LEAN • SMART MANUFACTURING • INDUSTRY 5.0</p>

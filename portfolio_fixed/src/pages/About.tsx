@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const experiences = [
   {
-    role: 'Deputy Manager',
+    role: 'Head of Operational Excellence',
     company: 'Servis Tyres',
     responsibilities: 'Production Optimization, Operational Excellence, Smart KPI Systems, Process Improvement, Manufacturing Intelligence, Cost Reduction, Digital Manufacturing Transformation',
   },
@@ -29,12 +29,12 @@ const experiences = [
 ];
 
 const specializations = [
-  { title: 'AI for Manufacturing', desc: 'Developing intelligent manufacturing systems using machine learning, predictive analytics, automation, and industrial AI solutions.' },
+  { title: 'Cost Reduction & Process Efficiency', desc: 'Helping industries reduce operational costs, improve resource utilization, and increase profitability through intelligent process optimization.' },
   { title: 'Lean Six Sigma & Operational Excellence', desc: 'Implementing Lean systems, waste reduction strategies, Kaizen methodologies, process optimization, and continuous improvement frameworks.' },
+  { title: 'AI for Manufacturing', desc: 'Developing intelligent manufacturing systems using machine learning, predictive analytics, automation, and industrial AI solutions.' },
   { title: 'Smart Factory Transformation', desc: 'Helping organizations adopt Industry 4.0 and Industry 5.0 technologies through digital manufacturing and real-time operational visibility.' },
   { title: 'Production Optimization', desc: 'Improving OEE, reducing downtime, optimizing workflows, balancing production systems, and increasing manufacturing efficiency.' },
   { title: 'Industrial Data Analytics', desc: 'Building Power BI dashboards, KPI systems, production intelligence platforms, and operational analytics frameworks.' },
-  { title: 'Cost Reduction & Process Efficiency', desc: 'Helping industries reduce operational costs, improve resource utilization, and increase profitability through intelligent process optimization.' },
 ];
 
 const achievements = [
@@ -101,9 +101,6 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="about-hero-text">
               <p className="micro-label text-[#E86A33] mb-4">ABOUT</p>
-              <h1 className="font-display text-[clamp(40px,6vw,80px)] font-medium text-[#2B3A4E] leading-[0.95] mb-6">
-                About Ahmad Bin Sadiq
-              </h1>
               <p className="text-xl text-[#2B3A4E]/70 mb-6">
                 Manufacturing Transformation Consultant | AI Strategist | Lean Six Sigma Master Black Belt
               </p>
@@ -124,6 +121,10 @@ export default function About() {
                 <p className="font-display font-semibold text-lg">Gold Medalist</p>
                 <p className="micro-label opacity-80">Industrial Engineering</p>
               </div>
+              <div className="absolute -top-4 -right-4 lg:-right-8 bg-[#E86A33] text-[#FEFBF6] px-6 py-3 rounded-lg">
+                <p className="font-display font-semibold text-lg">PKR 100M+</p>
+                <p className="micro-label opacity-80">Savings Delivered</p>
+              </div>
             </div>
           </div>
         </div>
@@ -139,7 +140,7 @@ export default function About() {
                 Professional Background
               </h2>
               <p className="text-[#FEFBF6]/70">
-                Currently serving as Deputy Manager at Servis Tyres, leading initiatives focused on production optimization, operational excellence, and smart manufacturing transformation.
+                Currently serving as Head of Operational Excellence at Servis Tyres, leading initiatives focused on production optimization, operational excellence, and smart manufacturing transformation.
               </p>
             </div>
             <div className="lg:col-span-3 space-y-8">

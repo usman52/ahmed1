@@ -18,6 +18,10 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
+  const darkHeroPages = ['/case-studies', '/certifications'];
+  const isDarkHero = darkHeroPages.includes(location.pathname);
+  const useLightText = isDarkHero && !scrolled;
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -48,13 +52,17 @@ export default function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
             ? 'bg-[#FEFBF6]/90 backdrop-blur-md shadow-sm'
+            : isDarkHero
+            ? 'bg-transparent border-b border-[#FEFBF6]/10'
             : 'bg-transparent'
         }`}
       >
         <div className="section-padding flex items-center justify-between h-16 lg:h-20">
           <Link
             to="/"
-            className="font-display font-bold text-sm tracking-[0.15em] text-[#2B3A4E] hover:text-[#00B8A9] transition-colors"
+            className={`font-display font-bold text-sm tracking-[0.15em] transition-colors hover:text-[#00B8A9] ${
+              useLightText ? 'text-[#FEFBF6]' : 'text-[#2B3A4E]'
+            }`}
           >
             AHMAD BIN SADIQ
           </Link>
@@ -68,6 +76,8 @@ export default function Navbar() {
                 className={`px-3 py-2 text-[13px] font-medium uppercase tracking-[0.05em] transition-colors relative ${
                   location.pathname === link.path
                     ? 'text-[#00B8A9]'
+                    : useLightText
+                    ? 'text-[#FEFBF6]/80 hover:text-[#00B8A9]'
                     : 'text-[#2B3A4E] hover:text-[#00B8A9]'
                 }`}
               >
@@ -82,7 +92,9 @@ export default function Navbar() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="lg:hidden p-2 text-[#2B3A4E] hover:text-[#00B8A9] transition-colors"
+            className={`lg:hidden p-2 transition-colors hover:text-[#00B8A9] ${
+              useLightText ? 'text-[#FEFBF6]' : 'text-[#2B3A4E]'
+            }`}
             aria-label="Toggle menu"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}

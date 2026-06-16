@@ -1,11 +1,19 @@
 import { Link } from 'react-router';
-import { Linkedin, Github, Mail } from 'lucide-react';
+import { Linkedin, Github, Mail, RefreshCw, Clock, TrendingUp, ClipboardCheck, Cpu } from 'lucide-react';
 
 const footerLinks = [
   { label: 'Services', path: '/services' },
   { label: 'Case Studies', path: '/case-studies' },
   { label: 'Industries', path: '/industries' },
   { label: 'Certifications', path: '/certifications' },
+];
+
+const expertiseList = [
+  { icon: RefreshCw, label: 'Improve Efficiency & Reduce Costs' },
+  { icon: Clock, label: 'Accelerate Lead Times' },
+  { icon: TrendingUp, label: 'Boost Production & Output' },
+  { icon: ClipboardCheck, label: 'Standardize & Control Processes' },
+  { icon: Cpu, label: 'Advanced Data & AI Solutions' },
 ];
 
 export default function Footer() {
@@ -15,7 +23,7 @@ export default function Footer() {
       <div className="section-padding py-20 lg:py-32">
         <a
           href="mailto:ahmadbinsadiq@gmail.com"
-          className="block font-display text-[#FEFBF6] text-[clamp(48px,8vw,120px)] leading-[0.9] font-medium hover:text-[#00B8A9] transition-colors duration-500"
+          className="block font-display text-[#FEFBF6] text-[clamp(48px,8vw,120px)] leading-[1.0] pb-1 font-medium hover:text-[#00B8A9] transition-colors duration-500"
         >
           LET'S BUILD
         </a>
@@ -65,13 +73,15 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <p className="micro-label text-[#FEFBF6]/40 mb-4">Expertise</p>
-            <div className="flex flex-col gap-2">
-              <span className="font-mono text-xs text-[#FEFBF6]/60">Lean Six Sigma</span>
-              <span className="font-mono text-xs text-[#FEFBF6]/60">AI Manufacturing</span>
-              <span className="font-mono text-xs text-[#FEFBF6]/60">Smart Factory</span>
-              <span className="font-mono text-xs text-[#FEFBF6]/60">Industry 5.0</span>
+            <div className="flex flex-col gap-3">
+              {expertiseList.map((item, i) => (
+                <div key={i} className="flex items-center gap-2">
+                  <item.icon size={14} className="text-[#00B8A9] flex-shrink-0" />
+                  <span className="font-mono text-xs text-[#FEFBF6]/60">{item.label}</span>
+                </div>
+              ))}
             </div>
           </div>
           <div>

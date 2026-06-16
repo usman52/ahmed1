@@ -20,7 +20,7 @@ const achievements = [
 
 const experiences = [
   {
-    role: 'Deputy Manager',
+    role: 'Head of Operational Excellence',
     company: 'Servis Tyres',
     description: 'Leading manufacturing optimization, operational excellence, process improvement, and smart manufacturing initiatives.',
   },
@@ -125,7 +125,7 @@ GitHub: github.com/ahmadbinsadiq
 PROFESSIONAL OVERVIEW
 Gold Medalist Industrial Engineer with expertise in AI for Manufacturing, Lean Six Sigma, Smart Factory Transformation, Operational Excellence, Production Optimization, Industrial Data Analytics, KPI & Power BI Dashboards, Predictive Maintenance Systems, Manufacturing Intelligence, and Industry 4.0 & 5.0 Solutions.
 
-Currently serving as Deputy Manager at Servis Tyres with experience across tyre manufacturing, packaging, textile, sustainability, and industrial transformation projects.
+Currently serving as Head of Operational Excellence at Servis Tyres with experience across tyre manufacturing, packaging, textile, sustainability, and industrial transformation projects.
 
 KEY ACHIEVEMENTS
 - PKR 100M+ Operational Impact Delivered
@@ -139,7 +139,7 @@ KEY ACHIEVEMENTS
 
 PROFESSIONAL EXPERIENCE
 
-Deputy Manager — Servis Tyres
+Head of Operational Excellence — Servis Tyres
 Leading manufacturing optimization, operational excellence, process improvement, and smart manufacturing initiatives.
 
 Industrial Engineering & Operational Excellence — Jahangir Packages Private Limited
@@ -195,7 +195,7 @@ Building intelligent manufacturing systems designed for operational excellence, 
           <div className="grid lg:grid-cols-3 gap-12 items-center">
             <div className="lg:col-span-2">
               <p className="micro-label text-[#E86A33] mb-4">RESUME</p>
-              <h1 className="font-display text-[clamp(40px,6vw,80px)] font-medium text-[#2B3A4E] leading-[0.95] mb-4">
+              <h1 className="font-display text-[clamp(40px,6vw,80px)] font-medium text-[#2B3A4E] leading-[1.05] pb-1 mb-4">
                 Resume & Professional Profile
               </h1>
               <p className="font-display text-xl text-[#2B3A4E] mb-2">Ahmad Bin Sadiq</p>
@@ -221,7 +221,7 @@ Building intelligent manufacturing systems designed for operational excellence, 
         <div className="overview-content max-w-4xl mx-auto text-center">
           <p className="micro-label text-[#00B8A9] mb-4">PROFESSIONAL OVERVIEW</p>
           <p className="text-lg text-[#FEFBF6]/80 leading-relaxed mb-8">
-            Gold Medalist Industrial Engineer with expertise in AI for Manufacturing, Lean Six Sigma, Smart Factory Transformation, Operational Excellence, Production Optimization, Industrial Data Analytics, KPI & Power BI Dashboards, Predictive Maintenance Systems, Manufacturing Intelligence, and Industry 4.0 & 5.0 Solutions. Currently serving as Deputy Manager at Servis Tyres with experience across tyre manufacturing, packaging, textile, sustainability, and industrial transformation projects.
+            Gold Medalist Industrial Engineer with expertise in AI for Manufacturing, Lean Six Sigma, Smart Factory Transformation, Operational Excellence, Production Optimization, Industrial Data Analytics, KPI & Power BI Dashboards, Predictive Maintenance Systems, Manufacturing Intelligence, and Industry 4.0 & 5.0 Solutions. Currently serving as Head of Operational Excellence at Servis Tyres with experience across tyre manufacturing, packaging, textile, sustainability, and industrial transformation projects.
           </p>
           <div className="flex flex-wrap justify-center gap-2">
             {['Manufacturing Transformation', 'Lean Manufacturing', 'AI & Industrial Analytics', 'OEE Improvement', 'Production Optimization', 'Operational Excellence', 'Smart Manufacturing', 'KPI Dashboards', 'Cost Reduction', 'Predictive Maintenance'].map((tag, i) => (

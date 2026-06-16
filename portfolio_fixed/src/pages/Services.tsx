@@ -11,6 +11,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const servicesList = [
   {
+    icon: TrendingDown,
+    title: 'Cost Reduction & Operational Excellence',
+    desc: 'Helping industries reduce manufacturing cost while improving operational performance.',
+    services: ['Operational Cost Analysis', 'Manufacturing Cost Optimization', 'Resource Utilization Improvement', 'Energy Efficiency Optimization', 'Labor Productivity Improvement', 'Operational Waste Elimination', 'Smart Costing Systems', 'Financial Visibility Dashboards'],
+    impact: ['Reduced operational expenses', 'Improved profitability', 'Better cost visibility', 'Increased resource efficiency', 'Sustainable operational performance'],
+  },
+  {
     icon: Brain,
     title: 'AI for Manufacturing',
     desc: 'Transform traditional manufacturing into intelligent production ecosystems using Artificial Intelligence and industrial analytics.',
@@ -51,13 +58,6 @@ const servicesList = [
     desc: 'Reducing machine failures and maintenance costs through intelligent predictive systems.',
     services: ['Predictive Maintenance Models', 'Equipment Reliability Analytics', 'Machine Failure Prediction', 'Preventive Maintenance Optimization', 'Maintenance KPI Systems', 'Breakdown Reduction Strategies', 'AI-Based Maintenance Analytics', 'Reliability Improvement Frameworks'],
     impact: ['Reduced machine downtime', 'Lower maintenance cost', 'Increased equipment reliability', 'Improved production continuity', 'Better maintenance planning'],
-  },
-  {
-    icon: TrendingDown,
-    title: 'Cost Reduction & Operational Efficiency',
-    desc: 'Helping industries reduce manufacturing cost while improving operational performance.',
-    services: ['Operational Cost Analysis', 'Manufacturing Cost Optimization', 'Resource Utilization Improvement', 'Energy Efficiency Optimization', 'Labor Productivity Improvement', 'Operational Waste Elimination', 'Smart Costing Systems', 'Financial Visibility Dashboards'],
-    impact: ['Reduced operational expenses', 'Improved profitability', 'Better cost visibility', 'Increased resource efficiency', 'Sustainable operational performance'],
   },
 ];
 
@@ -108,7 +108,7 @@ export default function Services() {
       <section className="min-h-[50vh] flex items-center justify-center bg-[#FEFBF6] pt-20">
         <div className="services-hero section-padding max-w-4xl mx-auto text-center py-16 lg:py-24">
           <p className="micro-label text-[#E86A33] mb-4">SERVICES</p>
-          <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#2B3A4E] leading-[0.95] mb-6">
+          <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#2B3A4E] leading-[1.05] pb-1 mb-6">
             Manufacturing Consulting Services
           </h1>
           <p className="text-xl text-[#00B8A9] font-medium mb-4">AI-Powered Manufacturing Transformation</p>

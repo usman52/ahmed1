@@ -9,24 +9,28 @@ gsap.registerPlugin(ScrollTrigger);
 const certifications = [
   {
     icon: Shield,
+    image: '/images/certifications-hero.jpg',
     title: 'Lean Six Sigma Master Black Belt',
     expertise: ['Lean Manufacturing', 'Six Sigma Methodologies', 'DMAIC Framework', 'Waste Reduction', 'Continuous Improvement', 'Root Cause Analysis', 'Process Optimization', 'Operational Excellence'],
     description: 'Focused on improving manufacturing performance, reducing operational waste, increasing efficiency, and building sustainable process improvement systems.',
   },
   {
     icon: Award,
+    image: '/images/smart-factory.jpg',
     title: 'AI Engineering — IBM',
     expertise: ['Artificial Intelligence', 'Machine Learning', 'Predictive Analytics', 'AI Model Development', 'Industrial AI Applications', 'Intelligent Decision Systems'],
     description: 'Applied in manufacturing analytics, predictive maintenance, and smart factory transformation projects.',
   },
   {
     icon: Award,
+    image: '/images/data-analytics-viz.jpg',
     title: 'Data Science — IBM',
     expertise: ['Data Science', 'Industrial Data Analytics', 'Data Visualization', 'Machine Learning', 'Statistical Analysis', 'Predictive Modeling'],
     description: 'Focused on transforming manufacturing and operational data into actionable business intelligence.',
   },
   {
     icon: Award,
+    image: '/images/roi-percentage.jpg',
     title: 'Data Analytics — Google',
     expertise: ['Business Intelligence', 'Data Visualization', 'KPI Reporting', 'Dashboard Development', 'Data-Driven Decision Making', 'Analytical Problem Solving'],
     description: 'Applied in operational reporting systems, production intelligence platforms, and manufacturing KPI dashboards.',
@@ -107,7 +111,7 @@ export default function Certifications() {
       <section className="min-h-[50vh] flex items-center justify-center bg-[#2B3A4E] pt-20">
         <div className="cert-hero section-padding max-w-4xl mx-auto text-center py-16 lg:py-24">
           <p className="micro-label text-[#00B8A9] mb-4">CREDENTIALS</p>
-          <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#FEFBF6] leading-[0.95] mb-6">
+          <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#FEFBF6] leading-[1.05] pb-1 mb-6">
             Certifications & Achievements
           </h1>
           <p className="text-xl text-[#00B8A9] font-medium mb-4">
@@ -156,14 +160,23 @@ export default function Certifications() {
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {certifications.map((cert, i) => (
-              <div key={i} className="cert-card bg-white rounded-2xl border-2 border-[#2B3A4E]/10 p-8 shadow-sm hover:shadow-lg transition-all duration-300 group">
+              <div key={i} className="cert-card bg-white rounded-2xl border-2 border-[#2B3A4E]/10 shadow-sm hover:shadow-lg transition-all duration-300 group overflow-hidden">
+                <div className="relative h-40 overflow-hidden">
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#2B3A4E]/70 to-transparent" />
+                  <span className="absolute top-4 right-4 px-3 py-1 bg-[#00B8A9] text-[#FEFBF6] text-xs font-medium rounded-full">
+                    {cert.title.includes('IBM') ? 'IBM' : cert.title.includes('Google') ? 'Google' : 'Certified'}
+                  </span>
+                </div>
+                <div className="p-8">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-14 h-14 rounded-xl bg-[#00B8A9]/10 flex items-center justify-center group-hover:bg-[#00B8A9] transition-colors">
                     <cert.icon className="w-7 h-7 text-[#00B8A9] group-hover:text-[#FEFBF6] transition-colors" />
                   </div>
-                  <span className="px-3 py-1 bg-[#00B8A9] text-[#FEFBF6] text-xs font-medium rounded-full">
-                    {cert.title.includes('IBM') ? 'IBM' : cert.title.includes('Google') ? 'Google' : 'Certified'}
-                  </span>
                 </div>
                 <h3 className="font-display text-xl font-medium text-[#2B3A4E] mb-2">{cert.title}</h3>
                 <p className="text-sm text-[#2B3A4E]/60 mb-4">{cert.description}</p>
@@ -176,6 +189,7 @@ export default function Certifications() {
                       </span>
                     ))}
                   </div>
+                </div>
                 </div>
               </div>
             ))}
