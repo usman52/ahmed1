@@ -25,17 +25,17 @@ const experiences = [
     description: 'Leading manufacturing optimization, operational excellence, process improvement, and smart manufacturing initiatives.',
   },
   {
-    role: 'Industrial Engineering & Operational Excellence',
+    role: 'Head of Industrial Engineer Department',
     company: 'Jahangir Packages Private Limited',
     description: 'Worked on AI-driven operational systems, Lean transformation, production intelligence, and cost optimization projects.',
   },
   {
-    role: 'Industrial Engineering',
+    role: 'Industrial Engineer',
     company: 'Style Textile',
     description: 'Focused on Lean Manufacturing, workflow optimization, production balancing, and operational improvement initiatives.',
   },
   {
-    role: 'Research & Sustainability',
+    role: 'Research Assistant',
     company: 'World Wide Fund for Nature (WWF)',
     description: 'Supported sustainability and industrial decarbonization initiatives.',
   },
@@ -142,13 +142,13 @@ PROFESSIONAL EXPERIENCE
 Head of Operational Excellence — Servis Tyres
 Leading manufacturing optimization, operational excellence, process improvement, and smart manufacturing initiatives.
 
-Industrial Engineering & Operational Excellence — Jahangir Packages Private Limited
+Head of Industrial Engineer Department — Jahangir Packages Private Limited
 Worked on AI-driven operational systems, Lean transformation, production intelligence, and cost optimization projects.
 
-Industrial Engineering — Style Textile
+Industrial Engineer — Style Textile
 Focused on Lean Manufacturing, workflow optimization, production balancing, and operational improvement initiatives.
 
-Research & Sustainability — World Wide Fund for Nature (WWF)
+Research Assistant — World Wide Fund for Nature (WWF)
 Supported sustainability and industrial decarbonization initiatives.
 
 CORE EXPERTISE

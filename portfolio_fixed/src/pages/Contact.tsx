@@ -26,7 +26,7 @@ const opportunities = [
 ];
 
 const whyConnect = [
-  'Improve productivity', 'Reduce operational waste', 'Increase manufacturing efficiency',
+  'Improve productivity', 'Reduce operational cost', 'Increase manufacturing efficiency',
   'Build intelligent production systems', 'Improve operational visibility',
   'Develop data-driven decision systems', 'Implement sustainable manufacturing practices',
   'Prepare for Industry 5.0 transformation',
@@ -91,7 +91,6 @@ export default function Contact() {
         <div className="contact-hero section-padding max-w-7xl mx-auto w-full py-16 lg:py-24">
           <div className="grid lg:grid-cols-5 gap-12 items-start">
             <div className="lg:col-span-3">
-              <p className="micro-label text-[#E86A33] mb-4">CONTACT</p>
               <h1 className="font-display text-[clamp(40px,7vw,96px)] font-medium text-[#2B3A4E] leading-[1.05] pb-1 mb-6">
                 Contact Ahmad Bin Sadiq
               </h1>

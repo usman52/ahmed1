@@ -12,17 +12,17 @@ const experiences = [
     responsibilities: 'Production Optimization, Operational Excellence, Smart KPI Systems, Process Improvement, Manufacturing Intelligence, Cost Reduction, Digital Manufacturing Transformation',
   },
   {
-    role: 'Industrial Engineering & Operational Excellence',
+    role: 'Head of Industrial Engineer Department',
     company: 'Jahangir Packages Private Limited',
     responsibilities: 'AI-driven operational systems, Lean transformation, production intelligence, and cost optimization projects.',
   },
   {
-    role: 'Industrial Engineering',
+    role: 'Industrial Engineer',
     company: 'Style Textile',
     responsibilities: 'Lean Manufacturing, workflow optimization, production balancing, and operational improvement initiatives.',
   },
   {
-    role: 'Research & Sustainability',
+    role: 'Research Assistant',
     company: 'World Wide Fund for Nature (WWF)',
     responsibilities: 'Sustainability and industrial decarbonization initiatives.',
   },

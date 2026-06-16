@@ -19,15 +19,8 @@ const expertiseList = [
 export default function Footer() {
   return (
     <footer className="bg-[#2B3A4E]">
-      {/* Giant CTA */}
-      <div className="section-padding py-20 lg:py-32">
-        <a
-          href="mailto:ahmadbinsadiq@gmail.com"
-          className="block font-display text-[#FEFBF6] text-[clamp(48px,8vw,120px)] leading-[1.0] pb-1 font-medium hover:text-[#00B8A9] transition-colors duration-500"
-        >
-          LET'S BUILD
-        </a>
-      </div>
+      {/* CTA spacer — text removed */}
+      <div className="section-padding py-20 lg:py-32" />
 
       {/* Info Columns */}
       <div className="section-padding border-t border-[#FEFBF6]/10 py-12">

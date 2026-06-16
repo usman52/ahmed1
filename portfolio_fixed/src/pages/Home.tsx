@@ -25,14 +25,14 @@ function StatCounter({ end, prefix, suffix, label, color }: {
 }
 
 const services = [
-  { icon: Brain,      title: 'AI for Manufacturing',          desc: 'Machine learning, predictive analytics, and intelligent automation' },
+  { icon: TrendingDown, title: 'Cost Reduction',             desc: 'Operational excellence and resource optimization' },
   { icon: Target,     title: 'Lean Six Sigma Transformation', desc: 'Waste reduction, Kaizen, and continuous improvement' },
+  { icon: Brain,      title: 'AI for Manufacturing',          desc: 'Machine learning, predictive analytics, and intelligent automation' },
   { icon: Gauge,      title: 'OEE Improvement',              desc: 'Overall Equipment Effectiveness optimization systems' },
   { icon: Factory,    title: 'Smart Factory Solutions',       desc: 'Industry 4.0 & 5.0 transformation and IoT integration' },
   { icon: Settings,   title: 'Production Optimization',      desc: 'Workflow balancing, bottleneck elimination, flow improvement' },
   { icon: Wrench,     title: 'Predictive Maintenance',       desc: 'ML-based failure prediction and reliability engineering' },
   { icon: BarChart3,  title: 'KPI & Power BI Dashboards',    desc: 'Real-time production intelligence and data visualization' },
-  { icon: TrendingDown, title: 'Cost Reduction',             desc: 'Operational excellence and resource optimization' },
 ];
 
 const industries = [
