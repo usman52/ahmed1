@@ -18,7 +18,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const location = useLocation();
 
-  const darkHeroPages = ['/case-studies', '/certifications'];
+  const darkHeroPages = ['/', '/case-studies', '/certifications'];
   const isDarkHero = darkHeroPages.includes(location.pathname);
   const useLightText = isDarkHero && !scrolled;
 
