@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import { Link } from 'react-router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -68,7 +68,7 @@ function StatCounter({ end, prefix, suffix, label }: { end: number; prefix?: str
 
 export default function Resume() {
   const pageRef = useRef<HTMLDivElement>(null);
-  const [showToast, setShowToast] = useState(false);
+
 
   useEffect(() => {
     // Refresh after layout settles
@@ -112,82 +112,8 @@ export default function Resume() {
     return () => ctx.revert();
   }, []);
 
-  const handleDownload = () => {
-    // Create a professional CV content as text that can be downloaded
-    const cvContent = `
-AHMAD BIN SADIQ
-AI-Powered Manufacturing Consultant | Lean Six Sigma Master Black Belt | Industrial Engineer
-
-Email: ahmadbinsadiq@gmail.com
-LinkedIn: linkedin.com/in/ahmad-bin-sadiq
-GitHub: github.com/ahmadbinsadiq
-
-PROFESSIONAL OVERVIEW
-Gold Medalist Industrial Engineer with expertise in AI for Manufacturing, Lean Six Sigma, Smart Factory Transformation, Operational Excellence, Production Optimization, Industrial Data Analytics, KPI & Power BI Dashboards, Predictive Maintenance Systems, Manufacturing Intelligence, and Industry 4.0 & 5.0 Solutions.
-
-Currently serving as Head of Operational Excellence at Servis Tyres with experience across tyre manufacturing, packaging, textile, sustainability, and industrial transformation projects.
-
-KEY ACHIEVEMENTS
-- PKR 100M+ Operational Impact Delivered
-- 18% OEE Improvement Achieved
-- Lead Time Reduced from 15 Days to 2 Days
-- 25% Reduction in Equipment Breakdowns
-- AI-Based Manufacturing Solutions Developed
-- Smart KPI & Production Intelligence Systems Implemented
-- Lean Manufacturing Transformation Projects Executed
-- Smart Operational Costing Systems Designed
-
-PROFESSIONAL EXPERIENCE
-
-Head of Operational Excellence — Servis Tyres
-Leading manufacturing optimization, operational excellence, process improvement, and smart manufacturing initiatives.
-
-Head of Industrial Engineer Department — Jahangir Packages Private Limited
-Worked on AI-driven operational systems, Lean transformation, production intelligence, and cost optimization projects.
-
-Industrial Engineer — Style Textile
-Focused on Lean Manufacturing, workflow optimization, production balancing, and operational improvement initiatives.
-
-Research Assistant — World Wide Fund for Nature (WWF)
-Supported sustainability and industrial decarbonization initiatives.
-
-CORE EXPERTISE
-Manufacturing Transformation, Lean Manufacturing, AI & Industrial Analytics, OEE Improvement, Production Optimization, Operational Excellence, Smart Manufacturing Systems, KPI Dashboard Development, Cost Reduction Strategies, Predictive Maintenance, Process Optimization, Industrial Engineering Solutions
-
-CERTIFICATIONS
-- Lean Six Sigma Master Black Belt
-- AI Engineering — IBM
-- Data Science — IBM
-- Data Analytics — Google
-- Gold Medalist — Master of Industrial Engineering & Management
-
-Industries Served: Tyre Manufacturing, Packaging & Corrugated, Textile & Garments, Paper Manufacturing, Smart Manufacturing, Sustainability & Decarbonization
-
-Building intelligent manufacturing systems designed for operational excellence, sustainable growth, and Industry 5.0 transformation.
-`;
-
-    const blob = new Blob([cvContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Ahmad_Bin_Sadiq_CV.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-
-    setShowToast(true);
-    setTimeout(() => setShowToast(false), 3000);
-  };
-
   return (
     <div ref={pageRef} className="relative">
-      {/* Toast */}
-      {showToast && (
-        <div className="fixed top-24 right-6 z-50 bg-[#00B8A9] text-[#FEFBF6] px-6 py-3 rounded-lg shadow-lg animate-slide-up">
-          <p className="font-medium text-sm">CV Downloaded Successfully!</p>
-        </div>
-      )}
 
       {/* Hero */}
       <section className="min-h-[40vh] flex items-center bg-[#FEFBF6] pt-20">
