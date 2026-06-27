@@ -204,13 +204,14 @@ Building intelligent manufacturing systems designed for operational excellence, 
               </p>
             </div>
             <div className="lg:col-span-1 flex lg:justify-end">
-              <button
-                onClick={handleDownload}
+              <a
+                href="/Ahmad_Bin_Sadiq_CV.pdf"
+                download="Ahmad_Bin_Sadiq_CV.pdf"
                 className="pill-btn pill-btn-primary animate-pulse-glow"
               >
                 <Download className="w-5 h-5 mr-2" />
                 Download CV
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -347,10 +348,10 @@ Building intelligent manufacturing systems designed for operational excellence, 
             Explore detailed experience, technical expertise, certifications, projects, and industrial transformation achievements.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <button onClick={handleDownload} className="pill-btn pill-btn-primary animate-float">
+            <a href="/Ahmad_Bin_Sadiq_CV.pdf" download="Ahmad_Bin_Sadiq_CV.pdf" className="pill-btn pill-btn-primary animate-float">
               <Download className="w-5 h-5 mr-2" />
               Download CV
-            </button>
+            </a>
             <Link to="/contact" className="pill-btn pill-btn-outline">Contact Me</Link>
           </div>
         </div>

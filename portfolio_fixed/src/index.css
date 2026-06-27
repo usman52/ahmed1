@@ -63,6 +63,9 @@
 @layer components {
   .font-display {
     font-family: var(--font-display);
+    overflow: visible;
+    padding-bottom: 0.1em;
+    line-height: 1.15;
   }
 
   .font-mono {
