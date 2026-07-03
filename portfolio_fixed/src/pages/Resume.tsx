@@ -131,8 +131,8 @@ export default function Resume() {
             </div>
             <div className="lg:col-span-1 flex lg:justify-end">
               <a
-                href="/Ahmad_Bin_Sadiq_CV.pdf"
-                download="Ahmad_Bin_Sadiq_CV.pdf"
+                href="/Ahmad_Bin_Sadiq_CV.jpg"
+                download="Ahmad_Bin_Sadiq_CV.jpg"
                 className="pill-btn pill-btn-primary animate-pulse-glow"
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -274,7 +274,7 @@ export default function Resume() {
             Explore detailed experience, technical expertise, certifications, projects, and industrial transformation achievements.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href="/Ahmad_Bin_Sadiq_CV.pdf" download="Ahmad_Bin_Sadiq_CV.pdf" className="pill-btn pill-btn-primary animate-float">
+            <a href="/Ahmad_Bin_Sadiq_CV.jpg" download="Ahmad_Bin_Sadiq_CV.jpg" className="pill-btn pill-btn-primary animate-float">
               <Download className="w-5 h-5 mr-2" />
               Download CV
             </a>
