@@ -136,7 +136,7 @@ export default function Resume() {
                 className="pill-btn pill-btn-primary animate-pulse-glow"
               >
                 <Download className="w-5 h-5 mr-2" />
-                Download CV
+                Download Portfolio
               </a>
             </div>
           </div>
@@ -276,7 +276,7 @@ export default function Resume() {
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a href="/Ahmad_Bin_Sadiq_CV.jpg" download="Ahmad_Bin_Sadiq_CV.jpg" className="pill-btn pill-btn-primary animate-float">
               <Download className="w-5 h-5 mr-2" />
-              Download CV
+              Download Portfolio
             </a>
             <Link to="/contact" className="pill-btn pill-btn-outline">Contact Me</Link>
           </div>
