@@ -9,7 +9,7 @@ const navLinks = [
   { label: 'Case Studies', path: '/case-studies' },
   { label: 'Industries', path: '/industries' },
   { label: 'Certifications', path: '/certifications' },
-  { label: 'Resume', path: '/resume' },
+  { label: 'Portfolio', path: '/resume' },
   { label: 'Contact', path: '/contact' },
 ];
 
